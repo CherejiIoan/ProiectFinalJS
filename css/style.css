@@ -1,0 +1,763 @@
+/* start reset */
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+* {
+	box-sizing: border-box;
+
+	/*repara problemele de dimensionare cauzate de border si */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.row::before {
+	content: "";
+	display: table;
+}
+a, a:hover, a:visited, a:active, a:focus {
+	text-decoration: none;
+}
+
+@media (max-width: 39.9375rem) {
+	html {font-size: 12px;}
+}
+@media (max-width: 40rem) {
+	html {font-size: 13px;}
+}
+@media (max-width: 40rem) and (max-width: 63.9375rem) {
+	html {font-size: 14px;}
+}
+@media (max-width: 64rem) {
+	html {font-size: 15px;}
+}
+@media (max-width: 64rem) and (max-width: 74.9375rem) {
+	html {font-size: 16px;}
+}
+
+img {
+	display: block;
+	max-width: 100%;	
+}
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+.form-page {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+body {
+	font-family: 'Quicksand', sans-serif;
+	background-color: #eaeaea;
+}
+
+.login {
+	width: 320px;
+	border: 1px solid #b5cbb7;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #ffffff;
+
+}
+
+.login-title {
+	background-color: #1c3144;
+	text-align: center;
+	overflow: hidden;
+	padding: 0.75rem;
+	font-size: 2rem;
+	font-weight: 700;
+	color: white;
+}
+
+.login form {
+	margin: 2rem;
+
+}
+
+.login input {
+	display: block;	
+	width: 100%;
+	border-radius: 3rem;
+	font-size: 1rem;
+	border: 1px solid #b5cbb7;
+	padding: 1rem;
+	margin-bottom: .5rem;
+}
+
+.login input[type=submit] {
+	background-color: #067BC2;
+	color: #ffffff;
+	padding: .5rem;
+	width: 50%;
+	margin: 0 auto;
+}
+
+input:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.login .alt-form {
+	text-align: center;
+	font-size: 0.8rem;
+	padding-top: .5rem;
+}
+
+.login a {
+	color: #b0b0b0;
+	text-decoration: underline;
+
+}
+
+.login input[type=checkbox] {
+	display: inline-block;
+	width: auto;
+	position: relative;
+	top: 1px;
+}
+
+/*stilizam pagina timeline (headerul)*/
+
+header {
+	background-color: #1c3144;
+	color: white;
+	padding: 5px 1rem;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.left {
+	float: left;
+
+}
+
+.right{
+	float: right;
+}
+
+header .logo {
+	float: left;
+}
+
+header form {
+	float: left;
+	margin-left: 5px;
+	position: relative;
+}
+
+header .fa-grav {
+	font-size: 1.8rem;
+	color: white;
+}
+
+header input {
+	font-size: 1rem;
+	padding: 0.3rem 1rem;
+	border: none;
+	border-radius: .8rem;
+}
+
+header button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: none;
+	background-color: transparent;
+	bottom: 0;
+}
+
+header button:focus,
+header button:active {
+	box-shadow: none;
+	outline: none;
+}
+
+header li {
+	float: left;
+}
+
+header .user img {
+	height: 1.8rem;
+	float: left;
+ 	/* pentru ca float a fost facut pentru imagini nu
+ 	trebuie facut clear. SINGURA SITUATIE*/
+ 	border-radius: 50%;
+}
+
+header .user span {
+	display: inline-block;
+	font-size: 1rem;
+	padding: .3rem;
+	color: white;
+	font-weight: 500;
+}
+
+header .right .fa {
+	font-size: 1.40rem;
+	padding: .2rem;
+	color: rgba(255,255,255,0.5);
+	transition: color .3s;
+}
+
+header .right .fa:hover {
+	color: rgba(255,255,255,1);
+}
+
+header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+body {
+	padding-top: 2.8rem;
+}
+
+/*stilizare continut pagina sub header*/
+
+
+.useful-links {
+	width: 20%;
+	float: left;
+}
+
+main {	
+	margin: 0 2%;
+	width: 51%;
+	float: left;
+}
+
+.inutil {
+	width: 25%;
+	float: left;
+}
+
+.useful-links a > div {
+	flex: 1;
+}
+.useful-links a > div img {
+
+	border-radius: 50%;
+}			
+
+.useful-links .user-details span {
+	padding: .4rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex: 3;
+	color: #000000;
+	font-weight: 500;
+}
+
+.user-details > a {
+	display: flex;
+}
+
+.user-details {
+	border-bottom: 1px solid #b0b0b0;
+	margin-bottom: 1rem;
+	padding-bottom: .5rem;
+}
+
+.link-list h2 {
+	font-weight: 700;
+	padding-bottom: .5rem;
+	margin-bottom: .5rem;
+	border-bottom: 1px dotted #b0b0b0;
+}
+
+.link-list input {
+	float: left;
+	margin:0;
+	margin-right: 5px;
+	position: relative;
+	top: .15rem;
+}
+
+.link-list span {
+	display: flex;
+}
+
+.link-list li {
+	margin-bottom: .5rem;
+}
+
+.link-list {
+	margin-bottom: 1.5rem;
+
+}
+
+.link-list .fa {
+	width: 1.2rem;
+	text-align: center;
+}
+
+.link-list a {
+	color: #000000;
+}
+
+header {
+	z-index: 100;
+}
+
+/*stilizare postare*/
+
+article {
+	background-color: #ffffff;
+	border: 1px solid #b0b0b0;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+article .header .user-image {
+	float: left;
+}
+article .header .user-info {
+	float: left;
+	padding-left: 5px;
+}
+
+article .user-image {
+	width: 2.1rem;	
+}
+
+article .user-info a {
+	display: block;
+}
+
+article .user-info .username {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #000000;
+}
+article .user-info .post-date {
+	font-size: .8rem;
+	font-weight: 400;
+	color: #999999;
+}
+
+article .header .user-image img {
+	border-radius: 50%;
+}
+
+article .header {
+	position: relative;
+}
+
+article .header .post-menu {
+	position: absolute;
+	right: 0;
+	top: 0.6rem;
+	color: #b0b0b0;
+}
+
+article .content {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	}
+
+article .content .media > * {
+	width: 100%;
+}
+
+article .content .media {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+article .actions li {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+article .actions a {
+	color: #999999;
+	display: block;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.post-comment input {
+	font-size: 1rem;
+	padding: 0.3rem 1rem;
+	border: 1px solid #b0b0b0;
+	border-radius: .8rem;
+	width: 100%;
+}
+
+.post-comment button {
+	position: absolute;
+	right: 0.25rem;
+	top: 6px;
+	border: none;
+	background-color: transparent;
+	
+}
+
+.post-comment {
+	position: relative;
+}
+
+article {
+	margin-bottom: 1rem;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#overlayer {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	z-index: 999;
+	justify-content: center;
+}
+
+#overlayer.visible {
+	display: flex;
+}
+
+#friends-list-modal.visible {
+	display: flex;
+}
+
+#messages-list-modal.visible {
+	display: flex;
+}
+
+.modal {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	display: none;
+
+}
+
+.modal-box {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	background-color: white;
+	width:60%;
+	height: 80vh;
+  }
+
+.modal-box h1 {
+	background-color: #1C2541;
+	color: #437C90;
+	padding: 0.8rem;
+}
+
+.modal-container {
+	padding: 1rem;
+	flex:1;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 1rem;
+	overflow-y: scroll;
+
+}
+
+.modal-box a {
+	text-align: center;	
+	padding: 1rem;
+	background-color: #E94F37;
+}
+
+.friends-profil{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.friends-profil img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+
+.msg-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	align-content: stretch;
+	flex: 1;
+	padding: 0.7rem;
+}
+
+.friends-msg {
+	display: block;
+	width: 30%;
+	border-right: 2px solid #8d98a1;
+	padding: 0.3rem;
+
+
+}
+
+.messages-msg {
+	padding: 0.3rem;
+	overflow-y: scroll;
+	flex: 1;
+}
+
+.modal-user-details img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.modal-user-details{
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	padding:0.5rem 0.2rem;
+}
+
+.message-details{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.msg {
+	background-color: #eaeaea;
+	width: 70%;
+	margin: 0.5rem;
+	padding: 0.4rem;
+	border-radius: 10px;
+}
+
+.received {
+	float: left;
+}
+
+.send {
+	float: right;
+	background-color: #5AD4B6;
+}
+
+.logIn {
+	position: absolute;
+	top: 0;
+	background-color: #eaeaea;		
+	width: 100%;
+	height: 100vh;
+	display: none;
+	align-items: center;
+  	justify-content: center;
+  	z-index: 999;
+  }
+
+.logIn.visible {
+	display: flex;
+}
+
+.logIn-box {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	background-color: white;
+	width:70%;
+	height: 70vh;
+}
+
+.logIn-box h2{
+	background-color: #1c3144;
+    text-align: center;
+    overflow: hidden;
+    padding: 0.75rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+#logIn-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: stretch;
+}
+
+.users-select {
+	
+	width: 15%;
+	margin: 1rem;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.users-select.online-user {
+	cursor: pointer;
+}
+.users-select > img {
+	pointer-events: none;
+}
+
+.active-user {
+	background-color: #DFE8F2;
+	border-radius: 5px;
+}
+
+.comment-user {
+	display: flex;
+	align-items: center;
+}
+
+.comment img {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+.comments-list {
+	padding: 10px;
+}
+
+.comment p {
+	padding:5px;
+	font-style: italic;
+	font-size: 0.9rem;
+}
+
+.comment-user a {
+	font-size: 0.9rem;
+}
+
+.container-add img{
+	margin-bottom: 10px;
+
+}
+
+.users-select.online-user img {
+	opacity: 1;
+}
+
+.users-select img {
+	opacity: 0.3;
+}

@@ -1,0 +1,42 @@
+var _adds = [
+  {
+    "id": 1,
+    "addLink": "https://vivafm.ro/wp-content/uploads/2015/07/dedeman.jpg"
+  },
+  {
+    "id": 2,
+    "addLink": "https://www.dalim.com/wp-content/uploads/2015/05/Hornbach_Logo.png"
+  },
+  {
+    "id": 3,
+    "addLink": "https://img.gta5-mods.com/q95/images/bmw-m4gts-add-on/4c9799-GTA5_2016_05_19_17_51_30_402.jpg"
+  },
+  {
+    "id": 4,
+    "addLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShp9L92BPAL3QqpAFO19O-PqN1CbTUdfFEdomVl7gj6r5iknPsmw"
+  },
+  {
+    "id": 5,
+    "addLink": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ad213e50259181.58cb8d0ac4df2.jpg"
+  },
+  {
+    "id": 6,
+    "addLink": "https://f30.bimmerpost.com/forums/attachment.php?attachmentid=597772&d=1319462960"
+  },
+  {
+    "id": 7,
+    "addLink": "https://www.coca-colacompany.com/content/dam/journey/us/en/private/2015/02/1947-print-ad-671-900-abef8a95.jpg"
+  },
+  {
+    "id": 8,
+    "addLink": "https://i.ytimg.com/vi/WTRbBK6J5Vk/maxresdefault.jpg"
+  },
+  {
+    "id": 9,
+    "addLink": "https://static1.squarespace.com/static/5411dc11e4b0a8114c7469c3/t/5a3e7ef4419202d4b17c07e3/1514045175415/"
+  },
+  {
+    "id": 10,
+    "addLink": "http://www.renotechs.com/wp-content/uploads/2013/05/Capture.png"
+  }
+]

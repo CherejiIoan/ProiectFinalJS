@@ -1,0 +1,243 @@
+<!doctype html>
+
+<html lang="ro">
+	
+	<head>
+		<title>Main page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+
+
+	</head>
+	<body>
+	<div class="logIn visible">
+		<div class="logIn-box">
+			<h2>Select User</h2>
+			<div id="logIn-container">
+				<!-- <div id="user-2"class="users-select">
+					<img src="img/user.png">
+					<span>Nume</span>
+				</div> -->
+				
+			</div>
+		</div>
+	</div>
+	<div id="overlayer">
+		<div id="friends-list-modal" class="modal">
+			<div  class="modal-box">
+				<h1>Friends</h1>
+				<div id="friends-list" class="modal-container">
+					<!-- <div class="friends-profil">
+						<img src="http://placehold.it/80x80" alt="">
+						<span>Nume</span>
+					</div> -->
+					
+				</div>
+				<a id="fr-close-button">Close</a>
+			</div>
+		</div>
+
+		<div id="messages-list-modal" class="modal">
+			<div  class="modal-box">
+				<h1>Messages</h1>
+				<div id="messages-list" class="msg-container">
+					<div class="friends-msg">
+						
+					</div>
+					<div class="messages-msg">
+						<!-- <div class="msg received"></div>
+						<div class="msg send"></div> -->
+					</div>
+					
+				</div>
+				<a id="msg-close-button">Close</a>
+			</div>
+		</div>
+	</div>
+	
+	<header>
+		<div class="container row">
+
+			<div class="left row">
+
+				<div id="logo" class="logo">
+					<a 	>
+						<i class="fa fa-grav"></i>
+					</a>
+				</div>
+
+				<form action="timeline.html" method="get">
+					<input type="text" name="query" placeholder="Search...">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+						
+					</button>
+				</form>
+
+			</div>
+
+			<div class="right">
+				<ul class="row">
+					<li class="user">
+						<a href="#">
+							<img src="img/user.png" alt="">
+							<span id="header-username">Ionut</span>
+						</a>
+					</li>
+					<li >
+						<a href="#">
+							<i class="fa fa-commenting" id="messages-button"></i>
+						</a>
+					</li>
+					<li >
+						<a href="#">
+							<i class="fa fa-bell"></i>
+						</a>
+					</li>
+					<li >
+						<a href="#">
+							<i class="fa fa-cog"></i>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</header>
+	
+
+		<div class="container">
+			<aside class="useful-links">
+				<div class="user-details">
+					<a href="#">
+						<div>
+							<img src="img/user.png" alt="">
+						</div>
+						<span id="side-username">Chereji Ionut</span>
+					</a>					
+				</div>
+
+				<div class="link-list">
+					<h2>To do</h2>
+
+					<ul>
+						<li>
+							<input type="checkbox">
+							<span>Nu mai uita!</span>
+						</li>
+						<li>
+							<input type="checkbox">
+							<span>Nu mai uita sa iti amintesti chesti</span>
+						</li>
+						<li>
+							<input type="checkbox">
+							<span>Nu mai uita!</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="link-list">
+					<h2>Groups</h2>
+
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fa fa-briefcase"></i>
+								Work
+							</a>
+						</li>
+						<li>
+							<a id="friends-button">
+								<i class="fa fa-users"></i>
+								Friends								
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-user"></i>
+								Family
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="link-list">
+					<h2>Events</h2>
+
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fa fa-music"></i>
+								Fuego Live
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-tv"></i>
+								Antena 3...
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-gamepad"></i>
+								CS: GO tour...
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+			<main>		
+
+		<!-- aici se posteaza articolele din JS -->
+				
+			</main>
+
+			
+			<aside class="inutil">					
+				<div class="container-add">
+ 					 
+				</div>
+			</aside>
+		</div>
+		
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+
+
+
+
+
+<script src="js/sss.min.js"></script>
+<script src="js/jquery.simple-lightbox.js"></script>
+<script src="lib/users.json"></script>
+<script src="lib/messages.json"></script>
+<script src="lib/posts.json"></script>
+<!-- <script src="lib/comments.json"></script> -->
+<script src="lib/add.json"></script>
+<script src="js/scripts.js"></script>
+
+
+
+<link rel="stylesheet" href="css/sss.css">
+<link rel="stylesheet" href="css/jquery.simple-lightbox.css">
+<script>
+	jQuery(function($) {
+			$('.slider').sss();
+		});
+	
+	$(function() {
+ 			$('.container').simpleLightbox();
+		});
+
+</script>
+
+
+
+
+	</body>
+</html>
